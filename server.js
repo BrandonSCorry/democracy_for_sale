@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 
-//point to routes folder
+//point to routes file
 require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);
 
