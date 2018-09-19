@@ -38,20 +38,12 @@
 
     <!-- ====================================================================================================== -->
     <!-- ====================================================================================================== -->
-    <div class = "container">
-        <div class = "row">
-            <div class = "twelve columns">
-                <!-- Map div -->
-                <div id="mapid"></div>
-            </div>
-        </div>
-    </div>
-
-    
+    <!-- Map div -->
+    <div class = "container"><div class = "row"><div class = "twelve columns">
+        <div id="mapid"></div>
+    </div></div></div>
     <!-- ====================================================================================================== -->
     <!-- ====================================================================================================== -->
-    
-
     
     
  
@@ -60,7 +52,7 @@
     <!-- custom js -->
     <script>
         // set map view coordinates and zoom level
-        var mymap = L.map('mapid').setView([38.204465, -78.831961], 7);
+        var mymap = L.map('mapid').setView([38.307989, -79.269187], 7);
 
         // add tile layer
         L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
