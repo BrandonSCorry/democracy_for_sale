@@ -24,7 +24,7 @@ $("#search-submit").on("click", function() {
     console.log(search_results[0].phones[0]);
     console.log(search_results[0].urls[0]);
 
-
+//TODO:  use forEach or map loop - get html and generate it here with jquery output for API data
     $(".repName1").html(search_results[0].name);
     $(".party1").html(search_results[0].party);
     $(".phoneNum1").html(search_results[0].phones[0]);
