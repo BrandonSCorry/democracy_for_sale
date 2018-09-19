@@ -4,6 +4,7 @@ var express = require("express");
 var fs = require("fs");
 var bodyParser = require("body-parser");
 var path = require("path");
+var $ = require("jquery");
 
 
 // Sets up the Express App
