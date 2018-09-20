@@ -3,6 +3,8 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
+var fs = require("fs");
+var $ = require("jquery");
 
 // Sets up the Express App
 // =============================================================
@@ -17,7 +19,7 @@ app.use(bodyParser.json());
 
 
 //point to routes folder
-require("./app/routing/apiRoutes")(app);
+// require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);
 
 

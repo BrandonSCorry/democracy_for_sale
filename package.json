@@ -1,0 +1,29 @@
+{
+  "name": "democracy_for_sale",
+  "version": "1.0.0",
+  "description": "link to our google doc plan: https://docs.google.com/document/d/15SfUecVarqtQfw0kXCIGwFq6c_T0sTQUNLQEWfbjBks/edit?usp=sharing",
+  "main": "carousel.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
+    "jquery": "^3.3.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AJC-147/democracy_for_sale.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AJC-147/democracy_for_sale/issues"
+  },
+  "homepage": "https://github.com/AJC-147/democracy_for_sale#readme"
+}

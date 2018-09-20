@@ -1,3 +1,5 @@
+
+
 // set map view coordinates and zoom level
 var mymap = L.map('mapid').setView([38.307989, -79.269187], 7);
 
@@ -10,6 +12,12 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
     }).addTo(mymap);
 
 // geoJSON congressional districts
-var  districts = require("./assets/JSON/va-md-113-congress.geo.json");
-L.geoJSON(districts).addTo(mymap);
+$.getJSON("./assets/JSON/map.geojson", function(data){
+    var geojson = L.geoJson(data);
+    console.log(geojson);
+    geojson.addTo(mymap);
+    });
+
+
+
     
