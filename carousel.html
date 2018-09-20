@@ -1,32 +1,32 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Carousel</title>
-<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Merriweather:300:italic" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet" type="text/css">
-<link href="./carousel.css" rel = "stylesheet" type = "text/css">
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> 
-</head>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Democracy For Sale / Carousel </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link type="text/css" rel="stylesheet" href="./assets/css/materialize.min.css" media="screen,projection">
+        <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/carousel.css" />
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    </head>
 
 <body>
-    <header>
-        <div class="container">
-          <div class="name">
-            <div class="logo">Democracy For Sale</div>
+        <nav>
+            <div class="nav-wrapper container">
+                <a href="index.html" class="brand-logo">Democracy For Sale</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#" class="active">carousel</a></li>
+                    <li><a href="./map.html">maps</a></li>
+                    <li> <form name="search_form" action="" method="POST"> <input type="text" id="term" name="term" placeholder="Search Address Here"> </form> </li>
+                    <li><button id="search-submit" type="submit">Submit</button></li>
+                </ul>
           </div>
-          <nav class="nav">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#" class="active">Carousel</a></li>
-              <li><a href="map.html">Map</a></li>
-            </ul>
           </nav>
-        </div> <!-- .container -->
-      </header>
 <div class="carousel">
   <div class="carousel__control"> </div>
   <div class="carousel__stage">

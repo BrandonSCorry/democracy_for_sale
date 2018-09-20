@@ -1,0 +1,70 @@
+html {
+    font-family: 'Raleway', sans-serif!important;
+    color: black;
+    margin: 0;
+}
+
+html.home {
+    background-image: url("../images/congress.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+nav {
+    background-color: firebrick;
+}
+
+.declaration,
+.tagline {
+    text-align: center;
+}
+
+.declaration {
+    font-size: 96px;
+}
+
+.hero-image {
+    margin-top: 300px;
+}
+
+.hero-search-wrap {
+    text-align: center;
+}
+
+.input-text {
+    padding: 0 10px !important;
+    border-top-left-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+    border-bottom: 2px solid #9e9e9e !important;
+    margin-left: -10px!important;
+    color: white;
+}
+
+.input-text:hover,
+.input-text:focus,
+.input-text:active {
+    background-color: rgba(200, 200, 200, 0.2) !important;
+    border-bottom: 2px solid firebrick !important;
+    box-shadow: none !important;
+    transition: all 0.2s ease-in-out !important;
+}
+
+.input-text#hero-search {
+    width: 350px !important;
+}
+
+.input-submit {
+    width: 10%;
+    margin: 0 20px;
+    background-color: firebrick;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: black;
+    padding: 10px;
+}
+
+.input-submit:hover {
+    background-color: crimson;
+    transition: background-color 0.2s ease-in-out;
+}
