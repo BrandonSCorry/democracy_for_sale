@@ -35,10 +35,10 @@
         <!--  !!!!!!! Search/NAV Bar goes here !!!!!!-->
     <!-- ====================================================================================================== -->
     <header>
-            <div class="container">
-              <div class="name">
+        <div class="container">
+            <div class="name">
                 <div class="logo">Democracy For Sale</div>
-              </div>
+            </div>
               <nav class="nav">
                 <ul>
                   <li><a href="index.html">Home</a></li>
@@ -46,8 +46,8 @@
                   <li><a href="#" class="active">Map</a></li>
                 </ul>
               </nav>
-            </div> <!-- .container -->
-          </header>
+        </div> <!-- .container -->
+    </header>
 
 
     <!-- ====================================================================================================== -->
@@ -63,18 +63,7 @@
  
 
     <!-- ====================================================================================================== -->
-    <!-- custom js -->
-    <script>
-        // set map view coordinates and zoom level
-        var mymap = L.map('mapid').setView([38.307989, -79.269187], 7);
-
-        // add tile layer
-        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-            maxZoom: 18,
-            id: 'mapbox.streets',
-            accessToken: 'pk.eyJ1IjoiZWxtOSIsImEiOiJjam05Yzl4a281MHhhM2tvZ3M1ZmtqaXRiIn0.KigR8xW7dn9FGF2TmDsoaw'
-            }).addTo(mymap);
-    </script>
+    <!-- map.js -->
+    <script type="text/javascript" src="./map.js"></script>
 </body>
 </html>
