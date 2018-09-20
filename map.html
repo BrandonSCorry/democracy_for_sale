@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Map</title>
+
+    <!-- Skeleton CSS -->
+    <link rel = "stylesheet" href="./assets/css/skeleton.css">
+    <link rel = "stylesheet" href="./assets/css/normalize.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+    crossorigin=""/>
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+    integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+    crossorigin=""></script>
+    <!-- mapbox
+    <script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' /> -->
+</head>
+<body>
+    <!-- ====================================================================================================== -->
+    <!-- CSS Styling -->
+    <style>
+        #mapid {
+            height: 600px;
+        }
+    </style>
+    <!-- ====================================================================================================== -->
+    
+
+
+    <!-- ====================================================================================================== -->
+        <!--  !!!!!!! Search/NAV Bar goes here !!!!!!-->
+    <!-- ====================================================================================================== -->
+
+
+
+    <!-- ====================================================================================================== -->
+    <!-- ====================================================================================================== -->
+    <!-- Map div -->
+    <div class = "container"><div class = "row"><div class = "twelve columns">
+        <div id="mapid"></div>
+    </div></div></div>
+    <!-- ====================================================================================================== -->
+    <!-- ====================================================================================================== -->
+    
+    
+ 
+
+    <!-- ====================================================================================================== -->
+    <!-- custom js -->
+    <script>
+        // set map view coordinates and zoom level
+        var mymap = L.map('mapid').setView([38.307989, -79.269187], 7);
+
+        // add tile layer
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: 18,
+            id: 'mapbox.streets',
+            accessToken: 'pk.eyJ1IjoiZWxtOSIsImEiOiJjam05Yzl4a281MHhhM2tvZ3M1ZmtqaXRiIn0.KigR8xW7dn9FGF2TmDsoaw'
+            }).addTo(mymap);
+    </script>
+</body>
+</html>
