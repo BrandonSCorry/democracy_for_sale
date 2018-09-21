@@ -11,7 +11,7 @@ var $ = require("jquery");
 var app = express();
 var PORT = process.env.PORT || 1337;
 
-app.use(express.static(path.join(__dirname, "./app/public")));
+app.use(express.static(path.join(__dirname, "./assets")));
 
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: true }));
