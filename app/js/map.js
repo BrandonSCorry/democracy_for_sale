@@ -13,11 +13,39 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 
 // geoJSON congressional districts with a pop
 var districts = $.getJSON("./assets/JSON/map.geojson", function(data){
-    var geojson = L.geoJson(data, {
-
-    });
-    console.log(geojson);
-    geojson.addTo(mymap);
+    L.geoJson(data, {
+        style: function(feature){
+            return{
+                // set opacity to 50%
+                fillOpacity: 0.5
+            };
+        },
+        // call on each feature
+        onEachFeature: function(feature, layer){
+            layer.on({
+                // function on mouseover 
+                mouseover: function(event) {
+                    layer = event.target
+                    // change opacity to show user a difference in layer
+                    layer.setStyle({
+                        fillOpacity: 0.9
+                    });
+                    // popup shows which district it is
+                    layer.bindPopup("<h1>"+feature.properties.District+" District</h1>");
+                },
+                //function when mouse no longer is hovering over location
+                mouseout: function(event) {
+                    layer = event.target
+                    // return opacity to 50%
+                    layer.setStyle({
+                        fillOpacity: 0.5
+                    });
+                }
+            });
+        }
+    
+    }).addTo(mymap);
+    console.log(L.geoJson(data));
     });
 
 
