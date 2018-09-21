@@ -1,0 +1,22 @@
+{
+  "name": "democracy_for_sale",
+  "version": "1.0.0",
+  "description": "",
+  "main": "api1.js",
+  "dependencies": {
+    "request": "^2.81.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AJC-147/democracy_for_sale.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AJC-147/democracy_for_sale/issues"
+  },
+  "homepage": "https://github.com/AJC-147/democracy_for_sale#readme"
+}
