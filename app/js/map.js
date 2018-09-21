@@ -12,7 +12,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
     }).addTo(mymap);
 
 // geoJSON congressional districts with a pop
-var districts = $.getJSON("./assets/JSON/map.geojson", function(data){
+var districts = $.getJSON("../data/map.geojson", function(data){
     var geojson = L.geoJson(data, {
 
     });
