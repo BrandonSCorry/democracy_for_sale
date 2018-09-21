@@ -1,8 +1,8 @@
 $( document ).ready(function() {
 
-$("#search-submit").on("click", function() {
+$("#search-submit").on("click", function(event) {
     event.preventDefault();
-    var search = $("#term").val();
+    var search = $("#term").val().trim();
     var url = "https://www.googleapis.com/civicinfo/v2/representatives?roles=legislatorUpperBody&roles=legislatorLowerBody";
   url += '&' + $.param({
     'key': "AIzaSyDMc43gP3viUAT1YzBjs4cXjOyP1UQHtJQ",
