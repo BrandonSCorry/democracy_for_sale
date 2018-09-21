@@ -17,6 +17,12 @@ $( document ).ready(function() {
 
     var publicaWorking = "https://api.propublica.org/congress/v1/members/senate/RI/current.json";
 
+    var publicaCommQ = "https://api.propublica.org/campaign-finance/v1/2016/committees/search.json?query=Team Ryan";
+
+  var publicaComm = "https://api.propublica.org/campaign-finance/v1/2016/committees/C00545947.json";
+
+
+
 
 
 
@@ -27,7 +33,7 @@ $( document ).ready(function() {
       type: 'GET',
     // cycle: '2014',
     dataType: 'json',
-    // query: "Mark Warner",
+    query: "C00545947",
     headers: {'X-API-Key': 'okgYNJhUb4A4NGXqcH7fPPsOHv4GiGElqmGiP2Ag'}
     }).done(function(publicaData) {
       console.log(publicaData);
