@@ -1,10 +1,6 @@
 // Dependencies
 // =============================================================
-<<<<<<< HEAD
-// var path = require("path");
-=======
-//var path = require("path");
->>>>>>> 4cfc2634d050c7dc4b6fb09fc76ab44b681a8fb5
+var path = require("path");
 
 // Routes
 // =============================================================
@@ -12,7 +8,7 @@ module.exports = function(app) {
 
 // Basic route that sends the user first to the AJAX Page
   app.get("/", function (req, res) {
-    res.sendFile(path.join(__dirname, "../../home.html"));
+    res.sendFile(path.join(__dirname, "../../index.html"));
   });
 
   app.get("/map", function (req, res) {
