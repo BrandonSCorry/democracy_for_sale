@@ -11,12 +11,16 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
     accessToken: 'pk.eyJ1IjoiZWxtOSIsImEiOiJjam05Yzl4a281MHhhM2tvZ3M1ZmtqaXRiIn0.KigR8xW7dn9FGF2TmDsoaw'
     }).addTo(mymap);
 
-// geoJSON congressional districts
-$.getJSON("./assets/JSON/map.geojson", function(data){
-    var geojson = L.geoJson(data);
+// geoJSON congressional districts with a pop
+var districts = $.getJSON("./assets/JSON/map.geojson", function(data){
+    var geojson = L.geoJson(data, {
+
+    });
     console.log(geojson);
     geojson.addTo(mymap);
     });
+
+
 
 
 
