@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
     
     
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/normalize.css" />
@@ -24,9 +25,6 @@
     <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
     integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
     crossorigin=""></script>
-    
-    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/index.css" />
-
 
 
 
@@ -56,12 +54,45 @@
         </div>
     </div>
 </div>
+        
+    <!-- MODAL BUTTON -->
+        
+        <!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
 
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
+
+    <!-- MODAL -->
+      
+      <!-- Modal content -->
+<div class="modal-content">
+  <div class="modal-header">
+    <span class="close">&times;</span>
+    <h2>Modal Header</h2>
+  </div>
+  <div class="modal-body">
+    <p>Some text in the Modal Body</p>
+    <p>Some other text...</p>
+  </div>
+  <div class="modal-footer">
+    <h3>Modal Footer</h3>
+  </div>
+</div>
+       
         <!-- MAP -->
         
-        <div class = "container" id="map"><div class = "row"><div class = "twelve columns">
-        <div id="mapid"></div>
-        </div></div></div>
+<!--        <div class = "container" id="map"><div class = "row"><div class = "twelve columns">-->
+    <div id="map"><div id="mapid"></div></div>
+<!--        </div></div></div>-->
 
 
         <!-- CAROUSEL -->
@@ -122,29 +153,25 @@
     
 <footer>
         <span id="footer">
-    Copyright © | Data provided by <a href="https://www.census.gov/">United States Census Bureau</a> & ...
+    Copyright © | Data provided by <a href="https://www.census.gov/">United States Census Bureau</a> & <a href="https://developers.google.com/civic-information/">Google Civic Information</a> & OpenFEC & Pro Publica
 </span>
     </footer>
-    
 
-    <script type="text/javascript" src="./app/js/carousel.js"></script>
+    <script type="text/javascript" src="./js/carousel.js"></script>
 
-   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-
-
-   <script type="text/javascript" src="./js/civicinfo.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
     <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
 
-    <script type="text/javascript" src="./js/skeleton-menu.js"></script>
+    <script type="text/javascript" src="./js/modal.js"></script>
     
     <script type="text/javascript" src="./js/leafletajax.js"></script>
     
     <script type="text/javascript" src="./js/map.js"></script>
     
-    <script src="./js/civicinfo.js"></script>
+    <script type="text/javascript" src="./js/civicinfo.js"></script>
     
-    <script src="./data/census-api1.js"></script>
+    <script type="text/javascript" src="./data/census-api1.js"></script>
 
    <script>
 
