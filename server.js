@@ -5,13 +5,16 @@ var bodyParser = require("body-parser");
 var path = require("path");
 var fs = require("fs");
 var $ = require("jquery");
+var request = require("request");
 
 // Sets up the Express App
 // =============================================================
 var app = express();
 var PORT = process.env.PORT || 1337;
 
-app.use(express.static(path.join(__dirname, "/")));
+
+app.use(express.static(path.join(__dirname, "./app/public")));
+
 
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: true }));
