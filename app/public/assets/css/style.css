@@ -9,9 +9,16 @@ html, body {
     background-color: #009ee4;
 }
 
+.navBar a {
+    font-size: 3.2rem;
+    text-shadow: -3px 1px 5px #007dd5;
+}
+
+
 #mainNavBar {
 /*    text-align: right;*/
-    border-bottom: solid 3px firebrick;
+/*    border-bottom: solid 3px #fe4c34;*/
+    filter: drop-shadow(1px 5px 10px #007dd5);
 }
 
 a.page-nav {
@@ -19,14 +26,35 @@ a.page-nav {
     right: 30px;
 }
 
+.brand-logo {
+    position: relative;
+    left: 5%;
+}
+
 #navbar-right {
     position: absolute;
     right: 5%;
 }
 
+button {
+    background: linear-gradient(-20deg, #33aaff, whitesmoke, #fe4c34);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 25s ease infinite;
+  -moz-animation: Gradient 25s ease infinite;
+  animation: Gradient 25s ease infinite; 
+}
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+    
+
 footer {
     background: #009ee4;
-    border-top: solid 3px firebrick;
+    border-top: solid 3px #fe4c34;
     width: 100%;
     height: 25px;
     position: fixed;
@@ -49,12 +77,12 @@ form {
     display: inline-flex;
     margin-bottom: 0;
     position: relative;
-    top: 8px;
+    top: 19px;
 }
 
 button {
     position: relative;
-    top: 7px;
+    top: 18px;
 }
 
 /*
@@ -75,7 +103,7 @@ button {
 	  font-weight: bold;
 	  font-size: 2em;
 	  letter-spacing: 0.04em;
-	  background-color: firebrick;
+	  background-color: #fe4c34;
 	  color: #ffffff;
 	  padding: 1em;
 	  width: auto;
@@ -103,7 +131,7 @@ button {
   }
   
   .nav ul li a:hover {
-	  color: firebrick;
+	  color: #fe4c34;
   }
   
   .nav ul li a.active {
@@ -118,6 +146,9 @@ button {
 .declaration,
 .tagline {
     text-align: center;
+    color: #fe4c34;
+    text-shadow: -3px 1px 5px #b81701;
+
 }
 
 .declaration {
@@ -145,7 +176,7 @@ button {
 .input-text:focus,
 .input-text:active {
     background-color: rgba(200, 200, 200, 0.2) !important;
-    border-bottom: 2px solid firebrick !important;
+    border-bottom: 2px solid #fe4c34 !important;
     box-shadow: none !important;
     transition: all 0.2s ease-in-out !important;
 }
@@ -157,7 +188,7 @@ button {
 .input-submit {
     width: 10%;
     margin: 0 20px;
-    background-color: firebrick;
+    background-color: #fe4c34;
     border: 2px solid black;
     border-radius: 5px;
     color: black;
@@ -480,7 +511,7 @@ div#myModal {
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 99999 !important; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
