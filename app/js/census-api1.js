@@ -1,4 +1,31 @@
-//To run in Terminal, type node api.js 08 (for district 8)
+$( document ).ready(function() {
+
+$("#search-submit").on("click", function() {
+    event.preventDefault();
+    
+    var search = $("#term").val();
+    var url = "https://www.googleapis.com/civicinfo/v2/representatives?roles=legislatorLowerBody";
+  url += '&' + $.param({
+    'key': "AIzaSyDMc43gP3viUAT1YzBjs4cXjOyP1UQHtJQ",
+    'address': search,
+    'levels': "country",
+  });
+    $.ajax({
+    url: url,
+    method: 'GET',
+  }).done(function(result) {
+    console.log(result);
+        
+    var search_results = result.officials;
+
+    console.log(search_results[0].name);
+    console.log(search_results[0].district);
+    console.log(search_results[0].party);
+    console.log(search_results[0].state);
+        
+    //Use district and state data to define variables below
+        
+        
 
 var request = require("request");
 
@@ -75,4 +102,13 @@ request(queryUrl, function(error, response, body) {
 //    console.log("Error!!")
 //}
 });
+        
+          }).fail(function(err) {
+    throw err;
+  });    console.log(search);
+    console.log(url);
 
+});
+
+
+});
