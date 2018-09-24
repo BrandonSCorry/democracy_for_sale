@@ -58,7 +58,8 @@ button {
 
 footer {
     background: #009ee4;
-    border-top: solid 3px #fe4c34;
+/*    border-top: solid 3px #fe4c34;*/
+    filter: drop-shadow(1px 5px 10px #007dd5);
     width: 100%;
     height: 25px;
     position: fixed;
@@ -87,6 +88,15 @@ form {
 button {
     position: relative;
     top: 18px;
+}
+
+#mapbutton {
+    position: relative;
+    top: 23px;
+    height: 58px;
+    width: 225px;
+    border-radius: 50px;
+    font-size: 1.3rem;
 }
 
 /*
@@ -157,6 +167,21 @@ button {
 
 .declaration {
     font-size: 96px;
+    position: relative;
+    bottom: 95px;
+}
+
+.tagline {
+    position: relative;
+    top: 275px;
+}
+
+#declaration {
+    animation-delay: 1.5s;
+}
+
+#tagline {
+    animation-delay: 3s;
 }
 
 .hero-image {
@@ -209,9 +234,9 @@ button {
 body {
 /*    background-image: url("../images/United_States_Capitol_-_west_front.jpg");*/
 /*    background-image: url("../images/6791202359_2c3a13495e_o.jpg");*/
-    background-image: url("../images/US_Capitol_west_side.jpg");
+/*    background-image: url("../images/US_Capitol_west_side.jpg");*/
 
-/*    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2) ), url(../images/United_States_Capitol_-_west_front.jpg);*/
+    background: linear-gradient( rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2) ), url(../images/6791202359_2c3a13495e_o.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -235,12 +260,13 @@ body {
 /*MAP*/
 
 #mapid {
-    height: 600px;
+    height: 843px;
 }
 
 #map {
 /*    margin-top: 10rem;*/
     z-index: 89990 !important; /* Sit on top */
+    animation-duration: .5s;
 }
 
 /*CAROUSEL*/
