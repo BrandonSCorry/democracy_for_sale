@@ -28,6 +28,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/index.css" />
 
 
+
+
 </head>
 
 <body>
@@ -42,12 +44,13 @@
 </div>
   
    
-    <div class="container hero-container">
+    <div class="container hero-container" id="landing">
         <div class="hero-image">
                 <div class="animated fadeInDown delay-2s">
             <h1 class="declaration col s12">Democracy</h1>
             <h3 class="tagline col s12">Do You Know How Your District Voted</h3>
             <div class="col s6 offset-s3 hero-search-wrap">
+              <button id="mapbutton">Map Button</button>
                 <a class="carousel-reroute" href="/carousel">Search You District Now!</a>
             </div>
         </div>
@@ -56,65 +59,66 @@
 
         <!-- MAP -->
         
-        <div class = "container"><div class = "row"><div class = "twelve columns">
+        <div class = "container" id="map"><div class = "row"><div class = "twelve columns">
         <div id="mapid"></div>
         </div></div></div>
 
+
         <!-- CAROUSEL -->
    
-       <div class="carousel">
-  <div class="carousel__control"> </div>
-  <div class="carousel__stage">
-    <div class="spinner spinner--left">
-      <div class="spinner__face js-active" data-bg="#27323c">
-        <div class="content" id="img1" data-type="carousel-1">
-          <div class="content__left">
-          </div>
-          <div class="content__right">
-            <div class="content__main" id = "box1">
-                    <h1 class = "repName1"></h1>
-                <p class = "party1"></p>
-              <p class = "phoneNum1"></p>
-              <p class = "webLink1"></p>
-            </div>
-            <h3 class="content__index">01</h3>
-          </div>
-        </div>
-      </div>
-      <div class="spinner__face" data-bg="#19304a">
-        <div class="content" id="img2" data-type="carousel-2">
-          <div class="content__left">
+       <!--<div class="carousel">-->
+  <!--<div class="carousel__control"> </div>-->
+  <!--<div class="carousel__stage">-->
+    <!--<div class="spinner spinner&#45;&#45;left">-->
+      <!--<div class="spinner__face js-active" data-bg="#27323c">-->
+        <!--<div class="content" id="img1" data-type="carousel-1">-->
+          <!--<div class="content__left">-->
+          <!--</div>-->
+          <!--<div class="content__right">-->
+            <!--<div class="content__main" id = "box1">-->
+                    <!--<h1 class = "repName1"></h1>-->
+                <!--<p class = "party1"></p>-->
+              <!--<p class = "phoneNum1"></p>-->
+              <!--<p class = "webLink1"></p>-->
+            <!--</div>-->
+            <!--<h3 class="content__index">01</h3>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div class="spinner__face" data-bg="#19304a">-->
+        <!--<div class="content" id="img2" data-type="carousel-2">-->
+          <!--<div class="content__left">-->
 
-          </div>
-          <div class="content__right">
-            <div class="content__main" id = "box2">
-                <h1 class = "repName2"></h1>
-                 <p class = "party2"></p>
-              <p class = "phoneNum2"></p>
-              <p class = "webLink2"></p>
-            </div>
-            <h3 class="content__index">02</h3>
-          </div>
-        </div>
-      </div>
-      <div class="spinner__face" data-bg="#2b2533">
-        <div class="content" id="img3" data-type="carousel-3">
-          <div class="content__left">
-          </div>
-          <div class="content__right">
-            <div class="content__main" id = "box3">
-                <h1 class = "repName3"></h1>
-                 <p class = "party3"></p>  
-              <p class = "phoneNum3"></p>
-              <p class = "webLink3"></p>
-            </div>
-            <h3 class="content__index">03</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+          <!--</div>-->
+          <!--<div class="content__right">-->
+            <!--<div class="content__main" id = "box2">-->
+                <!--<h1 class = "repName2"></h1>-->
+                 <!--<p class = "party2"></p>-->
+              <!--<p class = "phoneNum2"></p>-->
+              <!--<p class = "webLink2"></p>-->
+            <!--</div>-->
+            <!--<h3 class="content__index">02</h3>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div class="spinner__face" data-bg="#2b2533">-->
+        <!--<div class="content" id="img3" data-type="carousel-3">-->
+          <!--<div class="content__left">-->
+          <!--</div>-->
+          <!--<div class="content__right">-->
+            <!--<div class="content__main" id = "box3">-->
+                <!--<h1 class = "repName3"></h1>-->
+                 <!--<p class = "party3"></p>  -->
+              <!--<p class = "phoneNum3"></p>-->
+              <!--<p class = "webLink3"></p>-->
+            <!--</div>-->
+            <!--<h3 class="content__index">03</h3>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
     
 <footer>
         <span id="footer">
@@ -122,11 +126,13 @@
 </span>
     </footer>
     
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> 
 
     <script type="text/javascript" src="./app/js/carousel.js"></script>
 
-    <script type="text/javascript" src="./js/civicinfo.js"></script>
+   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+
+   <script type="text/javascript" src="./js/civicinfo.js"></script>
 
     <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
 
@@ -139,6 +145,28 @@
     <script src="./js/civicinfo.js"></script>
     
     <script src="./data/census-api1.js"></script>
+
+   <script>
+
+
+     var landing = document.getElementById('landing');
+     var map = document.getElementById('map');
+
+     map.style.display = 'none';
+
+
+     //***this function switches the overall view between the two main containers
+     function changeState() {
+
+       landing.style.display = 'none';
+       map.style.display = 'block';
+     }
+
+     $("#mapbutton").on("click", function () {
+       changeState();
+     });
+
+   </script>
     
 </body>
 </html>
