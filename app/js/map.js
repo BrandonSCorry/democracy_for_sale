@@ -18,13 +18,13 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
     id: 'mapbox.streets',
     accessToken: 'pk.eyJ1IjoiZWxtOSIsImEiOiJjam05Yzl4a281MHhhM2tvZ3M1ZmtqaXRiIn0.KigR8xW7dn9FGF2TmDsoaw'
     }).addTo(mymap);
+    
 
 // geoJSON congressional districts with a popup
 var districts = $.getJSON("./assets/JSON/map.geojson", function(data){
-    // get google civic info api and store it in a variable called civicApi
-    // var link = 
-    // var civicApi = 
     
+    
+    // new layer for geojson layer
     L.geoJson(data, {
         style: function(feature){
             return{
@@ -36,6 +36,15 @@ var districts = $.getJSON("./assets/JSON/map.geojson", function(data){
         },
         // call on each feature
         onEachFeature: function(feature, layer){
+            
+            // create variable for OCDid
+            var OCDid = feature.properties.OCDid;
+            //API key yes its bad to put this here 
+            var api = "?key=AIzaSyBEexgjdV_RBhX9PecP2O8sZxRbGzB9pPA/";
+            // get google civic info api link and store in variable called civicInfoLink
+            var civicInfoLink = "https://www.googleapis.com/civicinfo/v2/representatives" + api + OCDid;
+            console.log(OCDid);
+            console.log(civicInfoLink);
             layer.on({
                 // function on mouseover 
                 mouseover: function(event) {
@@ -56,12 +65,18 @@ var districts = $.getJSON("./assets/JSON/map.geojson", function(data){
                     });
                 }
             });
-        }
-    
+
+        },
+
+
     }).addTo(mymap);
     console.log(L.geoJson(data));
+    
+    
     });
-
+// add google civic API data to map
+    // link to API
+    
 
 
 
