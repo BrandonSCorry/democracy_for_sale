@@ -1,6 +1,8 @@
 // Get the modal
 var modal = document.getElementById('myModal');
 
+modal.style.display = "none";
+
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
 
