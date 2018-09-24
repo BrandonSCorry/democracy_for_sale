@@ -184,7 +184,7 @@ input[type="button"] {
   white-space: nowrap;
   background-color: transparent;
   border-radius: 25px;
-  border: 1px solid #bbb;
+  border: 1px solid transparent;
   cursor: pointer;
   box-sizing: border-box; }
 .button:hover,
@@ -198,7 +198,7 @@ input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
   color: #333;
-  border-color: #888;
+  border: 1px solid #fff;
   outline: 0; }
 .button.button-primary,
 button.button-primary,
@@ -235,12 +235,13 @@ input[type="password"],
 textarea,
 select {
   height: 38px;
-  padding: 6px 60px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  padding: 6px 50px; /* The 6px vertically centers text on FF, ignored by Webkit */
   background-color: #fff;
   border: 1px solid #D1D1D1;
   border-radius: 25px;
   box-shadow: none;
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+  width: 350px;}
 /* Removes awkward default styles on some inputs for iOS */
 input[type="email"],
 input[type="number"],
@@ -313,7 +314,7 @@ code {
   white-space: nowrap;
   background: #F1F1F1;
   border: 1px solid #E1E1E1;
-  border-radius: 4px; }
+  border-radius: 25px; }
 pre > code {
   display: block;
   padding: 1rem 1.5rem;
