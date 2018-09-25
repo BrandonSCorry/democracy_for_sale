@@ -20,6 +20,20 @@ html, body {
     font-weight: 100;
 }
 
+.navBar a:hover {
+    color: white;
+    text-shadow: -3px 1px 5px #007dd5;
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #b81701;
+}
+
 #pricetag {
     height: 90px;
     position: absolute;
@@ -86,6 +100,10 @@ footer {
 
 #footer a {
     color: white;
+}
+
+#footer a:hover {
+    color: #b81701;
 }
 
 form {
@@ -501,7 +519,7 @@ body {
   top: 50%;
   margin-top: -3vw;
   text-align: center;
-  font-family: font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
 /*  font-size: 5vw;*/
   height: 10vw;
   opacity: 1;
@@ -516,7 +534,7 @@ body {
   font-weight: 300;
   letter-spacing: 0.2em;
   opacity: 0.9;
-  font-family: font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .content__right {
@@ -533,7 +551,7 @@ body {
 
 .content__right .content__main {
   position: absolute;
-  font-family: font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-align: left;
   color: #fff;
 /*  font-size: 1.3vw;*/
@@ -556,7 +574,7 @@ body {
   right: -1vh;
   top: 35vh;
   opacity: 0.04;
-  font-family: font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #fff;
 }
 
