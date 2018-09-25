@@ -1,7 +1,7 @@
 /*MAIN*/
 
 html, body {
-    font-family: 'Spectral', serif;
+    font-family: "Spectral script=all rev=1", "Adobe Blank";
     color: black;
     height: 100%;
 	padding: 0;
@@ -14,10 +14,20 @@ html, body {
 }
 
 .navBar a {
-    font-size: 3.2rem;
+    font-size: 3.7rem;
     text-shadow: -3px 1px 5px #007dd5;
+    font-style: italic;
+    font-weight: 100;
 }
 
+#pricetag {
+    height: 90px;
+    position: absolute;
+    left: 26px;
+    top: 15px;
+    z-index: -1;
+    filter: drop-shadow(-1px 1px 1px #b81701);
+}
 
 #mainNavBar {
 /*    text-align: right;*/
@@ -82,7 +92,7 @@ form {
     display: inline-flex;
     margin-bottom: 0;
     position: relative;
-    top: 19px;
+    top: 24px;
 }
 
 button#myBtn {
