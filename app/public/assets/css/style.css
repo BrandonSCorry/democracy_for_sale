@@ -260,7 +260,8 @@ body {
 /*MAP*/
 
 #mapid {
-    height: 843px;
+    height: 1843px;
+/*    height: 100%;*/
 }
 
 #map {

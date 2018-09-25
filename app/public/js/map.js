@@ -1,5 +1,6 @@
 // set map view coordinates and zoom level
-var mymap = L.map('mapid').setView([38.307989, -79.269187], 7);
+var mymap = L.map('mapid').setView([33, -80], 7);
+//var mymap = L.map('mapid').setView([280, -600], 1);
 
 // function to change color of district based on representative party
 function partyColor(party) {
