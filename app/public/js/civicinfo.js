@@ -130,7 +130,10 @@ $( document ).ready(function() {
 
       });
     }
-  };
+  };//end var function
+
+  //event handlers
+
   $("#term").keypress(function(event) {
     if (event.which == 13) termSubmit();
   });
