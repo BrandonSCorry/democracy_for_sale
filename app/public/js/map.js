@@ -23,6 +23,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 
 // geoJSON congressional districts with a popup
 var districts = $.getJSON("./data/map.geojson", function (data) {
+  console.log(data);
   // new layer for geojson layer
   L.geoJson(data, {
     // call on each feature
@@ -37,21 +38,21 @@ var districts = $.getJSON("./data/map.geojson", function (data) {
       var api = "?key=AIzaSyBEexgjdV_RBhX9PecP2O8sZxRbGzB9pPA";
       // store google civic info api link in variable called civicInfoLink
       var civicInfoLink = "https://www.googleapis.com/civicinfo/v2/representatives/" + OCDid + api;
-      console.log(OCDid);
-      console.log(civicInfoLink);
+      // console.log(OCDid);
+      // console.log(civicInfoLink);
       // here's where we call the API itself, the data is stored in data2
       $.ajax({
         url: civicInfoLink,
         type: "GET",
         dataType: "json",
         success: function (data2) {
-          console.log(data2);
+          // console.log(data2);
           // set the fill color based on the party color using my partyColor function above
           layer.setStyle({
             fillColor: partyColor(data2.officials[0].party)
           });
           // popup that shows the congressional district name and representative
-          layer.bindPopup("<h4>" + feature.properties.District + " Congressional District</h4>" + "<br>" + "<h5>Representative " + data2.officials[0].name + "</h5>");
+          layer.bindPopup("<h3><b>" + feature.properties.District + " Congressional District</b></h3>" + "<br>" + "<h4>Representative " + data2.officials[0].name + "</h4>" + "<h5> <u>Donors:</u><br>" + feature.properties.donor1 + "<br>" + feature.properties.donor2 + "<br>" + feature.properties.donor3 + "</h5>");
         }
       }),
       // -----------------------------------------------------------------------------------------
