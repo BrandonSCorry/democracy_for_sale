@@ -323,19 +323,6 @@ body {
     width:200px;
 }
 
-#census-info {
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    margin-top: 10px;
-}
-
-.content__left {
-    position: relative;
-    left: 15px;
-    top: 15px;
-    padding: 3rem;
-}
-
 
 .js-transitions-disabled * {
   -webkit-transition: none !important;
