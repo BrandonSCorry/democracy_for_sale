@@ -30,8 +30,8 @@ $( document ).ready(function() {
         url: url,
         method: 'GET',
       }).done(function (result) {
-        console.log("offices result");
-        console.log(result.offices[1].divisionId);
+        console.log("result");
+        console.log(result.offices[1]);
           
 
         var search_results = result.officials;
@@ -77,16 +77,16 @@ $( document ).ready(function() {
           var polPic = "div#polPic" + count.toString();
 
           if (obj.party == "Democratic") {
-            $(polPic).html("<img id='donkey' src='../assets/images/donkey.png'>")
+            $(polPic).html("<img src='../assets/images/donkey.png'>")
           }
           else if (obj.party == "Republican") {
-            $(polPic).html("<img id='elephant' src='../assets/images/elephant.png'>")
+            $(polPic).html("<img src='../assets/images/elephant.png'>")
 
           } else if (obj.party == "Independent") {
-            $(polPic).html("<img id='independent' src='../assets/images/question.png'>")
+            $(polPic).html("<img src='../assets/images/question.png'>")
           }
             else {
-              $(polPic).html("<img id='third' src='../assets/images/question.png'>");
+              $(polPic).html("<img src='../assets/images/question.png'>");
             }
 
 
