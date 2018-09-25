@@ -35,23 +35,23 @@ var paintFaces = function paintFaces() {
     $('.spinner__face').each(function (i, el) {
         var $el = $(el);
         var color = $(el).attr('data-bg');
-        $el.children().css('backgroundImage', 'url(' + getBase64PixelByColor(color) + ')');
+        $el.children().css('backgroundColor', '#007dd5');
     });
 };
-var getBase64PixelByColor = function getBase64PixelByColor(hex) {
-    if (!canvas) {
-        canvas = document.createElement('canvas');
-        canvas.height = 1;
-        canvas.width = 1;
-    }
-    if (canvas.getContext) {
-        var ctx = canvas.getContext('2d');
-        ctx.fillStyle = hex;
-        ctx.fillRect(0, 0, 1, 1);
-        return canvas.toDataURL();
-    }
-    return false;
-};
+//var getBase64PixelByColor = function getBase64PixelByColor(hex) {
+//    if (!canvas) {
+//        canvas = document.createElement('canvas');
+//        canvas.height = 1;
+//        canvas.width = 1;
+//    }
+//    if (canvas.getContext) {
+//        var ctx = canvas.getContext('2d');
+//        ctx.fillStyle = hex;
+//        ctx.fillRect(0, 0, 1, 1);
+//        return canvas.toDataURL();
+//    }
+//    return false;
+//};
 var prepareDom = function prepareDom() {
     setIndexes();
     paintFaces();
