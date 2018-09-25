@@ -85,9 +85,8 @@ form {
     top: 19px;
 }
 
-button {
-    position: relative;
-    top: 18px;
+button#myBtn {
+  margin-left:1rem;
 }
 
 #mapbutton {
