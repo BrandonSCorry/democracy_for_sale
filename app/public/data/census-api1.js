@@ -1,10 +1,12 @@
 $( document ).ready(function() {
 
-$("#myBtn").on("click", function(event) {
+  console.log('test');
+  $("#myBtn").on("click", function(event) {
     event.preventDefault();
-    
+    console.log("clicked btn");
     var search = $("#term").val();
-    var url = "https://www.googleapis.com/civicinfo/v2/representatives?roles=legislatorLowerBody";
+    
+    var url = "https://www.googleapis.com/civicinfo/v2/representatives?roles=legislatorLowerBody&divisions";
   url += '&' + $.param({
     'key': "AIzaSyDMc43gP3viUAT1YzBjs4cXjOyP1UQHtJQ",
     'address': search,
