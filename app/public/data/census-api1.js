@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-$("#search-submit").on("click", function() {
+$("#myBtn").on("click", function(event) {
     event.preventDefault();
     
     var search = $("#term").val();
@@ -18,6 +18,8 @@ $("#search-submit").on("click", function() {
         
     var search_results = result.officials;
 
+            console.log("Census API")
+            console.log(search_results);
     console.log(search_results[0].name);
     console.log(search_results[0].district);
     console.log(search_results[0].party);
