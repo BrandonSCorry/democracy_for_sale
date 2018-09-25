@@ -124,7 +124,7 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: 'Spectral', serif;
+  font-family: "Spectral script=all rev=1", "Adobe Blank";
   color: #222; }
 
 
@@ -434,7 +434,7 @@ Removes the underline with text decoration = none.*/
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  font-family: 'Spectral', serif;
+  font-family: "Spectral script=all rev=1", "Adobe Blank";
 }
 
 /*Background color change during hover state*/

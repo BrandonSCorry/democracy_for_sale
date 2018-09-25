@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-  console.log('test');
+  console.log('census-api1-test');
   $("#myBtn").on("click", function(event) {
     event.preventDefault();
     console.log("clicked btn");
@@ -22,10 +22,8 @@ $( document ).ready(function() {
 
             console.log("Census API")
             console.log(search_results);
-    console.log(search_results[0].name);
-    console.log(search_results[0].district);
-    console.log(search_results[0].party);
-    console.log(search_results[0].state);
+        console.log("result");
+        console.log(result.offices[1]);
         
     //Use district and state data to define variables below
         

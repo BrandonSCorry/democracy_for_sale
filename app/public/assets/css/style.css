@@ -1,7 +1,7 @@
 /*MAIN*/
 
 html, body {
-    font-family: 'Spectral', serif;
+    font-family: "Spectral script=all rev=1", "Adobe Blank";
     color: black;
     height: 100%;
 	padding: 0;
@@ -14,10 +14,34 @@ html, body {
 }
 
 .navBar a {
-    font-size: 3.2rem;
+    font-size: 3.7rem;
+    text-shadow: -3px 1px 5px #007dd5;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.navBar a:hover {
+    color: white;
     text-shadow: -3px 1px 5px #007dd5;
 }
 
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #b81701;
+}
+
+#pricetag {
+    height: 90px;
+    position: absolute;
+    left: 26px;
+    top: 15px;
+    z-index: -1;
+    filter: drop-shadow(-1px 1px 1px #b81701);
+}
 
 #mainNavBar {
 /*    text-align: right;*/
@@ -78,11 +102,15 @@ footer {
     color: white;
 }
 
+#footer a:hover {
+    color: #b81701;
+}
+
 form {
     display: inline-flex;
     margin-bottom: 0;
     position: relative;
-    top: 19px;
+    top: 24px;
 }
 
 button#myBtn {
@@ -160,7 +188,6 @@ button#myBtn {
 .tagline {
     text-align: center;
     color: #fe4c34;
-    text-shadow: -3px 1px 5px #b81701;
 
 }
 
@@ -168,13 +195,14 @@ button#myBtn {
     font-size: 96px;
     position: relative;
     bottom: 95px;
+    text-shadow: -3px 1px 5px #b81701;
 }
 
 .tagline {
     position: relative;
     top: 275px;
+    text-shadow: -2px 1px 5px #b81701;
 }
-
 #declaration {
     animation-delay: 1.5s;
 }
@@ -277,6 +305,24 @@ body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 */
+
+/*
+#left-carousel{
+	background-image:none !important;
+	background-color: red;
+}
+*/
+
+#donkey, #elephant {
+/*
+    height: 100%;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    background-color: #007dd5;
+*/
+    width:200px;
+}
+
 
 .js-transitions-disabled * {
   -webkit-transition: none !important;
@@ -465,7 +511,7 @@ body {
   content: "";
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0,0,0,0);
 }
 
 .content__left h1 {
@@ -473,8 +519,8 @@ body {
   top: 50%;
   margin-top: -3vw;
   text-align: center;
-  font-family: oswald;
-  font-size: 5vw;
+  font-family: 'Raleway', sans-serif;
+/*  font-size: 5vw;*/
   height: 10vw;
   opacity: 1;
   color: #fff;
@@ -484,11 +530,11 @@ body {
 }
 
 .content__left span {
-  font-size: 1vw;
+/*  font-size: 1vw;*/
   font-weight: 300;
   letter-spacing: 0.2em;
   opacity: 0.9;
-  font-family: Merriweather;
+  font-family: 'Raleway', sans-serif;
 }
 
 .content__right {
@@ -505,10 +551,10 @@ body {
 
 .content__right .content__main {
   position: absolute;
-  font-family: Merriweather, serif;
+  font-family: 'Raleway', sans-serif;
   text-align: left;
   color: #fff;
-  font-size: 1.3vw;
+/*  font-size: 1.3vw;*/
   padding: 0 8vw;
   line-height: 1.65;
   font-weight: 300;
@@ -528,7 +574,7 @@ body {
   right: -1vh;
   top: 35vh;
   opacity: 0.04;
-  font-family: oswald;
+  font-family: 'Raleway', sans-serif;
   color: #fff;
 }
 
