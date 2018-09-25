@@ -33,10 +33,10 @@
 
 
    <div class="navBar" id="mainNavBar">
-           <a href="./index.html" class="brand-logo">Democracy For Sale</a>
+           <a href="./index.html" class="brand-logo">Democracy&nbsp; for Sale<img id="pricetag" src="./assets/images/pricetag1.png"></a>
      <div id="navbar-right">
-       <form name="search_form" action="" method="POST" class="page-search"> <input type="text" id="term" name="term" placeholder="Search Address Here"> </form>
-       <button id="myBtn" class="page-search" type="submit" >Submit</button>
+       <form name="search_form" action="" method="POST" class="page-search"> <input type="text" id="term" name="term" placeholder="Search Address Here">
+       <button id="myBtn" class="page-search">Submit</button> </form>
      </div>
 </div>
   
@@ -72,11 +72,13 @@
   <div class="carousel__stage">
     <div class="spinner spinner&#45;&#45;left">
       <div class="spinner__face js-active" data-bg="#27323c">
-        <div class="content" id="img1" data-type="carousel-1">
+        <div class="content" id="left-carousel" data-type="carousel-1">
           <div class="content__left">
+            <div id="polPic1"></div>
           </div>
           <div class="content__right">
             <div class="content__main" id = "box1">
+              <div id="img1"></div>
                     <h1 class = "repName1"></h1>
                 <p class = "party1"></p>
               <p class = "phoneNum1"></p>
@@ -87,12 +89,14 @@
         </div>
       </div>
       <div class="spinner__face" data-bg="#19304a">
-        <div class="content" id="img2" data-type="carousel-2">
+        <div class="content" id="right-carousel" data-type="carousel-2">
           <div class="content__left">
+            <div id="polPic2"></div>
 
           </div>
           <div class="content__right">
             <div class="content__main" id = "box2">
+              <div id="img2"></div>
                 <h1 class = "repName2"></h1>
                  <p class = "party2"></p>
               <p class = "phoneNum2"></p>
@@ -103,11 +107,14 @@
         </div>
       </div>
       <div class="spinner__face" data-bg="#2b2533">
-        <div class="content" id="img3" data-type="carousel-3">
+        <div class="content" data-type="carousel-3">
           <div class="content__left">
+            <div id="polPic3"></div>
+
           </div>
           <div class="content__right">
             <div class="content__main" id = "box3">
+              <div id="img3"></div>
                 <h1 class = "repName3"></h1>
                  <p class = "party3"></p>  
               <p class = "phoneNum3"></p>
@@ -121,9 +128,14 @@
   </div>
 </div>
 
+
   </div>
 
 </div>
+        
+<!--        Loading Spiral-->
+        
+<!--        <svg id="loading-spiral" width="960" height="500"></svg>-->
 
         <!-- MAP -->
         
@@ -140,14 +152,14 @@
 
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    
+<!--    <script src="https://d3js.org/d3.v4.min.js"></script>-->
 
    <script type="text/javascript" src="./js/civicinfo.js"></script>
-
 
    <script type="text/javascript" src="./js/carousel.js"></script>
 
     <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
-
 
     <script type="text/javascript" src="./js/modal.js"></script>
     
@@ -155,9 +167,7 @@
     
     <script type="text/javascript" src="./js/map.js"></script>
     
-
-    
-    <script type="text/javascript" src="./data/census-api1.js"></script>
+    <!--<script type="text/javascript" src="./data/census-api1.js"></script>-->
 
    <script>
 
@@ -178,9 +188,39 @@
      $("#mapbutton").on("click", function () {
        changeState();
      });
+       
+//var svg = d3.select("svg"),
+//    width = +svg.attr("width"),
+//    height = +svg.attr("height"),
+//    angles = d3.range(0, 2 * Math.PI, Math.PI / 200);
+//
+//var path = svg.append("g")
+//    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")")
+//    .attr("fill", "none")
+//    .attr("stroke-width", 10)
+//    .attr("stroke-linejoin", "round")
+//  .selectAll("path")
+//  .data(["#33aaff", "#cc99ff", "#fe4c34"])
+//  .enter().append("path")
+//    .attr("stroke", function(d) { return d; })
+//    .style("mix-blend-mode", "darken")
+//    .datum(function(d, i) {
+//      return d3.radialLine()
+//          .curve(d3.curveLinearClosed)
+//          .angle(function(a) { return a; })
+//          .radius(function(a) {
+//            var t = d3.now() / 1000;
+//            return 200 + Math.cos(a * 8 - i * 2 * Math.PI / 3 + t) * Math.pow((1 + Math.cos(a - t)) / 2, 3) * 32;
+//          });
+//    });
+//
+//d3.timer(function() {
+//  path.attr("d", function(d) {
+//    return d(angles);
+//  });
+//});
 
    </script>
     
 </body>
 </html>
-
