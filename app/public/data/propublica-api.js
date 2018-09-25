@@ -21,6 +21,9 @@ $( document ).ready(function() {
 
   var publicaComm = "https://api.propublica.org/campaign-finance/v1/2016/committees/C00545947.json";
 
+  var publicaSearch2 = "https://api.propublica.org/campaign-finance/v1/2016/races/VA.json";
+
+
 
 
 
@@ -29,11 +32,11 @@ $( document ).ready(function() {
 
 
   $.ajax({
-      url: publicaSpec,
+      url: publicaSearch2,
       type: 'GET',
     // cycle: '2014',
     dataType: 'json',
-    query: "C00545947",
+    query: "Donald S. Beyer",
     headers: {'X-API-Key': 'okgYNJhUb4A4NGXqcH7fPPsOHv4GiGElqmGiP2Ag'}
     }).done(function(publicaData) {
       console.log(publicaData);
