@@ -1,10 +1,12 @@
 $( document ).ready(function() {
 
-$("#search-submit").on("click", function() {
+  console.log('census-api1-test');
+  $("#myBtn").on("click", function(event) {
     event.preventDefault();
-    
+    console.log("clicked btn");
     var search = $("#term").val();
-    var url = "https://www.googleapis.com/civicinfo/v2/representatives?roles=legislatorLowerBody";
+    
+    var url = "https://www.googleapis.com/civicinfo/v2/representatives?roles=legislatorLowerBody&divisions";
   url += '&' + $.param({
     'key': "AIzaSyDMc43gP3viUAT1YzBjs4cXjOyP1UQHtJQ",
     'address': search,
@@ -18,10 +20,10 @@ $("#search-submit").on("click", function() {
         
     var search_results = result.officials;
 
-    console.log(search_results[0].name);
-    console.log(search_results[0].district);
-    console.log(search_results[0].party);
-    console.log(search_results[0].state);
+            console.log("Census API")
+            console.log(search_results);
+        console.log("result");
+        console.log(result.offices[1]);
         
     //Use district and state data to define variables below
         
