@@ -1,8 +1,6 @@
-
-
 $( document ).ready(function() {
 
-  console.log('test');
+  console.log('civicinfo-test');
 
   var termSubmit = function (e) {
 
@@ -32,7 +30,9 @@ $( document ).ready(function() {
         url: url,
         method: 'GET',
       }).done(function (result) {
-        console.log("result: " + result);
+        console.log("result");
+        console.log(result.offices[1]);
+          
 
         var search_results = result.officials;
         var count = 1;
@@ -228,8 +228,6 @@ $( document ).ready(function() {
     // }).fail(function(err) {
     //   throw err;
     // });
-
-
 
 
 
