@@ -1,7 +1,5 @@
 # voter info group project
 
-## opensecrets.org pls can we have api key pls? :)
-
 A web app allowing users to search for their federal congressional representatives across the entire U.S using Google Civic Info API
 
 We used Leaflet and the Mapbox API to render our map, and pulled information from a .geoJSON file found [HERE](https://code.highcharts.com/mapdata/) .
