@@ -7,7 +7,7 @@ The map shows the voting districts of MD & VA. Showing the representatives as we
 
 A visual carousel displays to the user basic info about their congressional reps based on the search input address (supports many address formats).
 
-##Heroku Deployment
+## Heroku Deployment
 
 http://vote-project.herokuapp.com/
 
