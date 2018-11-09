@@ -12,4 +12,6 @@ A visual carousel displays to the user basic info about their congressional reps
 http://vote-project.herokuapp.com/
 
 
-contrib: /ajc-147, /brandonscorry, /elm9, /morganmmbrabley91 
+## Contributors 
+
+[/ajc-147](https://github.com/ajc-147), [/brandonscorry](https://github.com/brandonscorry), [/elm9](https://github.com/elm9), [/morganmmbrabley91](https://github.com/morganmmbrabley91)
