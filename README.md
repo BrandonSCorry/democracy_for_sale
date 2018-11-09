@@ -1,4 +1,4 @@
-# voter info group project
+# Voter info group project
 
 A web app allowing users to search for their federal congressional representatives across the entire U.S using Google Civic Info API
 
